@@ -1,13 +1,421 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-size: 62.5%;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #add8e6;
+}
+
+.active_menu {
+  font-weight: bold;
+}
+
+/* HOME PAGE */
+.home_heading {
+  margin-top: 20rem;
+}
+.home_heading span {
+  color: #00bfff;
+}
+.home_heading h1 {
+  color: #008000;
+}
+.home_heading h3 {
+  color: #b5dfe6;
+}
+
+/* LOGIN PAGE */
+.login_box {
+  width: 25rem;
+  height: 3rem;
+}
+.login_position {
+  margin-top: 8rem;
+}
+.login_color {
+  color: #ff0000;
+  margin-top: 3rem;
+}
+.login_btn {
+  width: 25rem;
+  height: 3rem;
+  margin-left: 2.5rem;
+}
+.create_account {
+  width: 13rem;
+  height: 4.3rem;
+  margin-left: 8rem;
+}
+.login_border {
+  margin-left: 38rem;
+  border: 0.2rem solid #9a9191;
+  background-color: #add8e6;
+  border-radius: 2rem;
+  border-color: #313131;
+  width: 30rem;
+  height: 40rem;
+}
+
+/* SIGNUP PAGE */
+.signup_box {
+  width: 25rem;
+  height: 3rem;
+}
+.signup_position {
+  margin-top: 8rem;
+}
+.signup_color {
+  color: #ff0000;
+  margin-top: 3rem;
+}
+.signup_btn {
+  width: 25rem;
+  height: 3rem;
+  margin-left: 2.5rem;
+}
+.signin {
+  width: 13rem;
+  height: 4.3rem;
+  margin-left: 8rem;
+}
+.signup_border {
+  margin-left: 38rem;
+  border: 0.2rem solid #9a9191;
+  background-color: #add8e6;
+  border-radius: 2rem;
+  border-color: #313131;
+  width: 30rem;
+  height: 50rem;
+}
+
+/* EDIT BUTTON */
+.edit_btn {
+  margin-left: 10rem;
+}
+/* About Page */
+.profile-img img {
+  width: 22rem;
+  height: 30rem;
+  margin-left: 10rem;
+}
+.about {
+  margin-left: 6rem;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+.font {
+  font-weight: bolder;
+  color: red;
+  text-decoration: underline;
+}
+.font_color {
+  font-weight: bolder;
+  color: blue;
+  text-decoration: underline;
+}
+.profile-head {
+  margin-left: 15rem;
+}
+.profile-head h5 {
+  font-weight: 770;
+}
+.profile-head h6 {
+  font-weight: 650;
+  color: #021691;
+}
+.profile-work {
+  margin-left: 10rem;
+  font-weight: bolder;
+}
+.emp-profile {
+  border: 0.2rem solid #9a9191;
+  transform: rotate(-0.05deg);
+  margin-bottom: 7rem;
+  border-color: #313131;
+  background-color: #add8e6;
+}
+
+/* Error Page */
+#notfound {
+  position: relative;
+  height: 100vh;
+}
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, -50%);
+}
+.notfound {
+  max-width: 920px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.notfound .notfound-404 {
+  position: absolute;
+  height: 100px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -3;
+}
+.notfound .notfound-404 h1 {
+  font-family: "Maven Pro", sans-serif;
+  color: #ececec;
+  font-weight: 900;
+  font-size: 276px;
+  margin: 0px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.notfound .notfound-404 h2 {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 46px;
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.notfound .notfound-404 p {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 15px;
+}
+.notfound a {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #189cf0;
+  display: inline-block;
+  padding: 16px 38px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 400;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.notfound a:hover {
+  background-color: #fff;
+  border-color: #189cf0;
+  color: #189cf0;
+}
+
+/* RESPONSIVE CODE */
+@media only screen and (max-width: 768px) {
+  .signup_border {
+    margin: auto;
+    width: 30rem;
+    height: 40rem;
+  }
+  .login_border {
+    margin: auto;
+    width: 30rem;
+    height: 40rem;
+  }
+  .profile-img img {
+    width: 15rem;
+    height: 20rem;
+    margin-left: 2rem;
+  }
+  .emp-profile {
+    border: 0.1rem solid #9a9191;
+    height: 50rem;
+  }
+  .profile-head {
+    margin-left: 7rem;
+  }
+  .profile-work {
+    margin-left: 2rem;
+    font-weight: bolder;
+  }
+  .about {
+    margin-left: 5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .signup_border {
+    margin: auto;
+    width: auto;
+    height: auto;
+  }
+  .login_border {
+    margin: auto;
+    width: auto;
+    height: auto;
+  }
+  .profile-img img {
+    width: 15rem;
+    height: 20rem;
+    margin-left: 5rem;
+  }
+  .emp-profile {
+    border: 0.1rem solid #9a9191;
+    height: 70rem;
+  }
+  .profile-head {
+    margin-left: 2rem;
+  }
+  .profile-work {
+    margin-left: 2rem;
+    font-weight: bolder;
+  }
+  .about {
+    margin-left: 0.1rem;
+  }
+  .font {
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .login_border {
+    margin: auto;
+    width: auto;
+    height: 37rem;
+  }
+  .login_btn {
+    width: 21rem;
+    height: 3rem;
+    margin-left: 2rem;
+  }
+  .create_account {
+    margin-left: 6rem;
+  }
+  .signup_border {
+    height: 50rem;
+  }
+  .signup_btn {
+    width: 20rem;
+    height: 3rem;
+    margin-left: 2.5rem;
+  }
+  .signin {
+    margin-left: 6rem;
+  }
+  .edit_btn {
+    margin-left: 2rem;
+  }
+  .emp-profile {
+    border: 0.2rem solid #9a9191;
+    transform: rotate(-0.05deg);
+    margin: auto;
+    border-color: #313131;
+    background-color: #add8e6;
+  }
+}
+@media only screen and (max-width: 411px) {
+  .signup_btn {
+    width: 20rem;
+    height: 3rem;
+    margin-left: 2.5rem;
+  }
+  .signin {
+    margin-left: 6rem;
+  }
+  .signup_border {
+    height: 49rem;
+  }
+  .login_border {
+    height: 37rem;
+  }
+  .login_btn {
+    width: 20rem;
+    height: 3rem;
+    margin-left: 2.5rem;
+  }
+  .create_account {
+    margin-left: 6rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .login_border {
+    margin: auto;
+    width: auto;
+    height: auto;
+  }
+  .login_box {
+    width: 18rem;
+    height: 3rem;
+  }
+  .login_btn {
+    width: 16rem;
+    height: auto;
+    margin-left: 3.5rem;
+  }
+  .create_account {
+    width: 10rem;
+    height: auto;
+    margin-left: 6.5rem;
+    margin-bottom: 1rem;
+  }
+  .signup_border {
+    margin: auto;
+    width: auto;
+    height: auto;
+  }
+  .signup_border {
+    margin: auto;
+    width: auto;
+    height: auto;
+  }
+  .signup_box {
+    width: 18rem;
+    height: 2.3rem;
+  }
+  .signup_btn {
+    width: 16rem;
+    height: auto;
+    margin-left: 3.5rem;
+  }
+  .signin {
+    width: 10rem;
+    height: auto;
+    margin-left: 6.5rem;
+    margin-bottom: 1rem;
+  }
+  .profile-img img {
+    width: 15rem;
+    height: 20rem;
+    margin-left: 5rem;
+  }
+  .emp-profile {
+    border: 0.1rem solid #9a9191;
+    height: 70rem;
+  }
+  .profile-head {
+    margin-left: 2rem;
+  }
+  .profile-work {
+    margin-left: 2rem;
+    font-weight: bolder;
+  }
+  .about {
+    margin-left: 0.1rem;
+  }
+  .font {
+    margin: auto;
+  }
 }
